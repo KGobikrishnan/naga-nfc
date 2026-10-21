@@ -14,9 +14,9 @@ export const vCardData = {
   },
 
   quickActions: {
-    phone: "+918189989960",
-    phoneSecondary: "+918189989970",
-    whatsapp: "918189989960",
+    phone: "+91 9789705885",
+    phoneSecondary: "+91 95007 56881",
+    whatsapp: "919789705885",
     email: "hello@navipromotions.com",
     website: "https://www.navipromotions.com",
     mapsUrl: "https://maps.google.com/?q=Navi+Promotions+Sivakasi",
