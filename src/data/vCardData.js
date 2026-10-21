@@ -24,9 +24,9 @@ export const vCardData = {
   },
   about: {
     description:
-      "We are a Digital Marketing & Branding Agency that helps businesses grow online with creative strategies, powerful design and result-driven marketing solutions.",
+      "I’m the Founder & CEO of Navi Promotions and Cumbum Valley. As an SEO Expert and Business Development Strategist, I focus on helping businesses grow through digital strategies, systematic planning, and result-driven marketing.",
     extendedDescription:
-      "From disruptive viral social campaigns to high-converting web apps and brand identity systems, Navi Promotions equips visionaries and enterprises with unmatched digital dominance.",
+      "I specialize in creating practical growth systems that help businesses build stronger brands, reach the right audience, and scale sustainably.",
   },
   socialLinks: [
     { name: "Instagram", url: "https://instagram.com", icon: "instagram", color: "#E1306C" },

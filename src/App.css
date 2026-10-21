@@ -244,6 +244,8 @@ a {
   align-items: center;
   justify-content: center;
   gap: 6px;
+  margin: 0;
+  padding: 0;
 }
 
 .person-name {
@@ -251,6 +253,9 @@ a {
   font-weight: 800;
   color: #0f172a;
   letter-spacing: -0.3px;
+  margin: 0 !important;
+  padding: 0;
+  line-height: 1.2;
 }
 
 .verified-badge {
@@ -261,9 +266,11 @@ a {
   font-size: 13px;
   font-weight: 700;
   color: var(--primary);
-  margin-top: 2px;
+  margin: 4px 0 0 0 !important;
+  padding: 0;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  line-height: 1.2;
 }
 
 .company-badge-wrap {
@@ -540,17 +547,22 @@ a {
   background: #ffffff;
   border-radius: 16px;
   padding: 14px;
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   gap: 12px;
   border: 1px solid #f1f5f9;
   box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .contact-items-list {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  flex: 1;
+  min-width: 0;
 }
 
 .contact-row-item {
@@ -561,6 +573,7 @@ a {
   font-weight: 600;
   color: #334155;
   transition: color 0.2s;
+  min-width: 0;
 }
 .contact-row-item:hover {
   color: var(--primary);
@@ -583,6 +596,7 @@ a {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  min-width: 0;
 }
 
 .social-grid-wrapper {
@@ -590,24 +604,27 @@ a {
   align-items: center;
   justify-content: center;
   border-left: 1px solid #f1f5f9;
-  padding-left: 8px;
+  padding-left: 10px;
+  flex-shrink: 0;
 }
 
 .social-icon-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
+  grid-template-columns: repeat(3, 30px);
+  gap: 6px;
+  justify-content: center;
 }
 
 .social-icon-btn {
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #ffffff;
   transition: transform 0.2s;
+  flex-shrink: 0;
 }
 .social-icon-btn:hover {
   transform: scale(1.1);
@@ -1208,32 +1225,39 @@ a {
   padding: 14px;
   border: 1px solid #f1f5f9;
   box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .business-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 8px;
-  text-align: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }
 
 .business-stat-cell {
   display: flex;
   flex-direction: column;
-  padding: 4px;
+  padding: 8px 10px;
+  background: #f8fafc;
+  border-radius: 10px;
+  border: 1px solid #f1f5f9;
+  min-width: 0;
 }
 .b-stat-value {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 800;
   color: #0f172a;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  line-height: 1.3;
 }
 .b-stat-label {
-  font-size: 9px;
-  color: #94a3b8;
+  font-size: 10px;
+  color: #64748b;
   margin-top: 2px;
+  font-weight: 500;
 }
 
 /* ========================================================
@@ -1845,21 +1869,30 @@ a {
 
 /* Mobile Responsiveness adjustments */
 @media (max-width: 480px) {
-  .vcard-stage-container {
-    padding: 0 0 80px 0;
+  .vcard-page-wrapper {
+    padding: 12px 8px 40px;
   }
-  .iphone-frame {
-    border-radius: 0;
-    padding: 0;
-    border: none;
-    box-shadow: none;
-    height: 100vh;
+  .vcard-card-container {
+    border-radius: 20px;
   }
-  .iphone-island,
-  .iphone-status-bar {
-    display: none;
+  .contact-social-card {
+    padding: 12px 10px;
+    gap: 8px;
   }
-  .iphone-screen-scroll {
-    border-radius: 0;
+  .social-grid-wrapper {
+    padding-left: 8px;
+  }
+  .social-icon-grid {
+    grid-template-columns: repeat(2, 30px);
+    gap: 6px;
+  }
+  .social-icon-btn {
+    width: 30px;
+    height: 30px;
+  }
+  .contact-row-item {
+    font-size: 11px;
+    gap: 6px;
   }
 }
+
